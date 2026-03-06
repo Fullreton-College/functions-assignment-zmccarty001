@@ -1,5 +1,6 @@
 #include <iostream>
-using namspace std;
+#include <iomanip>
+using namespace std;
 
 void input( int& hours24, int& minutes);
 void output( int hours, int minutes);
@@ -43,4 +44,18 @@ int main()
 
   return 0;
 }
+void input(int& hours24, int& minutes) {
+  cout<<"Enter hours: \n";
+  cin>>hours24;
+  cout<<"Enter minutes: \n";
+  cin>>minutes;
+}
+void output(int hours, int minutes) {
+  cout<<hours<<":";
+  if (minutes<10) {
+    cout<<"0";
+  }
+  cout<<minutes<<endl;
+}
+
 
